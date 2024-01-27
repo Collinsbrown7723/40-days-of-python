@@ -1,0 +1,2 @@
+this 100this append but to the top of the file
+this the append 'a' mode, can create file not exist
