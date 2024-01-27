@@ -1,0 +1,100 @@
+1
+00:00:01,320 --> 00:00:05,790
+In the last two lectures, I've shown you how to read and write
+
+2
+00:00:05,790 --> 00:00:10,360
+typical csv files where the field delimiter is a comma.
+
+3
+00:00:10,440 --> 00:00:14,070
+There are cases where another delimiter is used.
+
+4
+00:00:14,070 --> 00:00:20,570
+For example, a colon a tab or any other character can be used as a delimiter.
+
+5
+00:00:20,790 --> 00:00:30,100
+The reader and writer functions of csv module are very flexible; we can pass in as arguments some
+
+6
+00:00:30,190 --> 00:00:35,820
+parameters that define the structure of the csv file.
+
+7
+00:00:36,080 --> 00:00:38,020
+Let me show you an example!
+
+8
+00:00:38,180 --> 00:00:42,620
+I 'll read a the file where the colon is used as the limiter.
+
+9
+00:00:42,620 --> 00:00:51,800
+In fact, this is the passwd file from any Linux distribution where all user and system accounts 
+
+10
+00:00:51,920 --> 00:00:52,630
+are saved.
+
+11
+00:00:55,340 --> 00:01:00,980
+After importing the csv module I'll open the file in read only mode.
+
+12
+00:01:03,990 --> 00:01:06,040
+passwd 
+
+13
+00:01:06,140 --> 00:01:13,400
+The name of the file is without .csv extension but there is no problem and it is in the
+
+14
+00:01:13,400 --> 00:01:16,860
+same directory with my Python script.
+
+15
+00:01:17,120 --> 00:01:27,350
+It will be opened in read-only mode as f: now reader=csv.reader
+
+16
+00:01:27,770 --> 00:01:32,740
+the file object and the second argument is the delimiter.
+
+17
+00:01:33,170 --> 00:01:37,200
+So delimiter=':'
+
+18
+00:01:37,280 --> 00:01:39,900
+This will be the delimiter.
+
+19
+00:01:40,640 --> 00:01:48,230
+I can pass in also other arguments, for example lineterminator=='\n'
+
+20
+00:01:54,130 --> 00:02:01,170
+and I'll iterate over the reader object for row in reader:print(row)
+
+21
+00:02:04,490 --> 00:02:10,720
+Now I will execute this script and this is the content of my file.
+
+22
+00:02:10,810 --> 00:02:15,100
+We can see how it parsed and read the file successfully.
+
+23
+00:02:20,640 --> 00:02:29,800
+Each line of the file is a list and each field is a list item.
+
+24
+00:02:29,960 --> 00:02:37,190
+This is how we read csv files where another delimiter is used. In the next lecture
+
+25
+00:02:37,560 --> 00:02:42,330
+I'll show you how to use csv dialects! See you in just a few seconds!
+

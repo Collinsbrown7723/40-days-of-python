@@ -1,0 +1,2 @@
+Printing a string
+x is 10
